@@ -1,0 +1,390 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #821010;
+    padding: 1rem;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-icons {
+    list-style: none;
+    display: flex;
+}
+
+.nav-icons li {
+    margin-right: 10px; /* Adjust the margin to create spacing between icons */
+}
+
+.nav-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-icons a {
+    display: inline-block;
+    margin-right: 15px; /* Adjust the spacing between icons */
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add smooth transition */
+}
+
+.nav-icons a img {
+    width: 25px; /* Adjust the width of the icons */
+    height: 25px; /* Adjust the height of the icons */
+    margin: 5px; /* Add space around the icons */
+    filter: brightness(0) invert(1); /* Make the icons white */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add smooth transition */
+}
+
+.nav-icons a:hover {
+    transform: translateY(-3px); /* Apply elevation effect */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.nav-icons a:hover img {
+    transform: scale(1.1) translateY(-3px); /* Apply elevation effect to the image */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Add box shadow to the image */
+}
+
+
+
+.main-content {
+
+    padding: 2rem;
+    
+}
+
+.main-content h2 {
+    margin-bottom: 1rem;
+    
+}
+
+h2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+     
+    max-width: 1200px; 
+}
+
+/* .heading{
+    margin-left: 10%;
+} */
+
+.image-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto; /* Center the image boxes */
+    max-width: 1200px; /* Limit maximum width of the image boxes */
+}
+
+h1,h2,h3{
+    font-family: Georgia, serif;
+    font-size: 25px;
+    margin-left: 50px;
+}
+h4{
+    font-size: 25px;
+    margin-left: 50px;
+    font-family: Georgia, serif;
+}
+
+.image-box {
+    flex: 1;
+    margin: 10px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 15px;
+    overflow: hidden; /* Hide overflow for rounded images */
+}
+
+.image-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    .buttons{
+        position: absolute;
+        top:50%;
+        right: 0;
+        width: 120px;
+        transform: translateY(-50%);
+      }
+}
+
+.image-box img {
+    width: 100%; /* Set the width to 100% to fit the box */
+    height: auto;
+    
+    object-fit: cover; /* Maintain aspect ratio while covering the box */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container {
+    margin-right: 10px; /* Optional: Add some spacing between search bar and bell icon */
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container {
+    margin-right: 10px; /* Optional: Add some spacing between search bar and bell icon */
+  }
+  
+  .bell-icon {
+    width: 20px; /* Adjust the width to your desired size */
+    height: 20px; /* Adjust the height to your desired size */
+  }
+    
+
+
+.image-text {
+    margin-top: 10px;
+    color: #555;
+}
+
+footer{
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding-top: 2%;
+    padding-bottom: 2%;
+   
+}
+
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    background-color: #333;
+    color: white;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    background-color: #333;
+    color: white;
+}
+
+.search-container {
+    flex: 1;
+    padding: 5px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-signup-container {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 2px 5px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.login {
+    background-color: #28a745;
+}
+
+.signup {
+    background-color: #dc3545;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.Styleweb{
+    text-align: left;
+}
+
+
+
+
+/* Reset button default styles */
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+
+/* Primary button styles */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Add box-shadow for a modern look */
+.btn-primary {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Add hover effect */
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Add active effect */
+.btn-primary:active {
+    background-color: #004185;
+}
+
+/* Adjust the position */
+.btn-primary {
+    margin-left: 90%;
+    transform: translateX(-100%);
+}
+.header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container {
+    margin-right: 10px; /* Optional: Add some spacing between search bar and bell icon */
+  }
+  
+  .bell-icon {
+    width: 20px; /* Adjust the width to your desired size */
+    height: 20px; /* Adjust the height to your desired size */
+    transition: transform 0.3s; /* Add a transition for smooth size change */
+  }
+  
+  .bell-icon:hover {
+    transform: scale(1.2); /* Increase the size on hover (adjust the scale factor as needed) */
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container {
+    margin-right: 10px; /* Optional: Add some spacing between search bar and bell icon */
+  }
+  
+  .bell-icon {
+    width: 20px; /* Adjust the width to your desired size */
+    height: 20px; /* Adjust the height to your desired size */
+    transition: transform 0.3s; /* Add a transition for smooth size change */
+    filter: invert(100%); /* Change the color to white */
+  }
+  
+  .bell-icon:hover {
+    transform: scale(1.2); /* Increase the size on hover (adjust the scale factor as needed) */
+  }
+    
